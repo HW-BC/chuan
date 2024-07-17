@@ -18,12 +18,14 @@ class RNNModel(nn.Module):
         # sequence_length: 序列长度，即每个输入样本的长度,（window大小，前四天CO2的排放量）,squence_length=4
         # input_dim: 特征数量（CO2的排放量作为输入特征预测明天CO2排放量),input_dim=1
         # shape:
+        # 二维：
         # [
         #     [1,2,5],
         #     [2,6,6],
         #     [3,6,9],
         #     [4,9,6],
         # ]
+        # 三维：
         # [
         #     [[8],[9],[2],[3]],
         #     [[2],[8],[3],[4]],
